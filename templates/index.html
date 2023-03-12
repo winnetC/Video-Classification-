@@ -17,6 +17,12 @@
                 upl.value = "";
             }
         };
+        
+        function classify_check()
+        {
+            alert("Oops! Something went wrong");
+        };
+        
     </script>
 
 </head>
@@ -34,7 +40,7 @@
         <p></p><p></p><p></p>
         <p class="text-left"><i>(Optional) <b>Search for object</b></i></p>
         <input class="form-control" placeholder="e.g. Cat" type="text" name="user_input">
-        <input class="btn btn-primary mt-3" type="submit" value="Classify">
+        <input class="btn btn-primary mt-3" onchange="classify_check()" type="submit" value="Classify">
     </form>
 
     {% if prediction %}
